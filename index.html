@@ -1,63 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Macarena | Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
+
 <body>
+
+    <!-- HEADER: LOGOTIPO Y NAVEGACIÓN -->
     <header>
-        <nav> ML.
-            <ul><!-- Elementos de la lista con su elemento ancla -->
+        <nav>
+            <a href="#inicio" class="logo">
+                <img src="assets/img/Logotipo negro.png" alt="Logotipo personal">
+            </a>
+
+            <ul>
                 <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#proyectos"> PROYECTOS</a></li>
-                <li><a href="#sobremi"> SOBRE MÍ </a></li>
-                <li><a href="#contacto"> CONTACTO</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <section id="inicio"> 
-           <h1> Diseño y desarrollo web</h1>
-           <p id=parrafo>Estudiante de Ingeniería en Computación e Informática, con interés en el desarrollo Front-End y el diseño de interfaces.</p>
-           <a href=""> Ver proyectos</a>
-           <a href=""> Sobre mí</a> 
-           
-           <p id="subtitulo-dinamico"></p>
-            <ul class="indicadores">
-                <li class="activo">01</li>
-                <li>02</li>
-                <li>03</li>
-            </ul>
-        </section>
 
-        <section id="proyectos">
-            <h2> PROYECTOS SELECCIONADOS </h2>
-            <p> </p>
-            <div class="contenedor-proyectos">
-            <article> 
-                <img src="img/PrimerProyecto.jpg" alt="Vista previa del primer proyecto">
-                <div class="info">
-                    <h3> Landing page (Producto demo)</h3>
-                    <p> Descripción breve del proyecto</p>
-                </div>            
-            </article>
+        <!-- SECCIÓN 01: INICIO -->
+        <section id="inicio">
 
-            <article>
-                <div class="info">
-                    <img src="" alt="">
-                    <h3> Reproductor de música</h3>
-                    <p>Descripción breve del proyecto</p>
-                </div>
+            <h1>PORTAFOLIO</h1>
+
+            <div class="palabras-inferiores">
+                <span>MACARENA LAGOS</span>
+                <span>INGENIERÍA INFORMÁTICA</span>
+                <span>CHILE // 2026</span>
+                <span>MAC.LAGOSR@GMAIL.COM</span>
             </div>
-            </article>
+
+        </section>
+
+        <!-- SECCIÓN 02: PROYECTOS -->
+        <section id="proyectos" class="proyectos">
+            <span class="etiqueta">PORTAFOLIO / 01</span>
+
+
+            <h2>PROYECTOS SELECCIONADOS</h2>
+
+            <p class="descripcion-proyectos">
+                Una selección de proyectos personales y conceptuales 
+                enfocados en el diseño y desarrollo web.
+            </p>
+
+
+            <div class="contenedor-proyectos">
+                <article class="tarjeta-proyecto">
+                    <img src="assets/img/proyecto-01.jpg" alt="Vista previa del proyecto 01">
+
+                    <div class="info-proyecto">
+                        <h3>PROYECTO 01</h3>
+                        <p class="proyecto-info">Diseño y desarrollo web</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="assets/img/proyecto-02.jpg" alt="Vista previa del proyecto 02">
+
+                    <div class="info-proyecto">
+                        <h3>PROYECTO 02</h3>
+                        <p class="proyecto-info">Proyecto conceptual de interfaz.</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="tecnologias">
+                HTML · CSS · JAVASCRIPT · DISEÑO UI
+            </p>
         </section>
 
 
+        <!-- SECCIÓN 03: SOBRE MÍ -->
+        <section id="sobre-mi" class="sobremi">
+            <span class="etiqueta">SOBRE MÍ / 02</span>
 
 
+            <h2>SOBRE MÍ</h2>
+
+            <p class="descripcion-sobremi">
+                Estudiante de Ingeniería en Computación e Informática,
+                con interés en el desarrollo front-end y el diseño
+                de interfaces.
+            </p>
+
+        </section>
+
+        <!-- SECCIÓN 04: CONTACTO -->
+        <section id="contacto" class="contacto">
+            <span class="etiqueta">CONTACTO / 03</span>
+
+
+            <h2>CONTACTO</h2>
+
+            <p>Próximamente agregaré mis medios de contacto.</p>
+
+        </section>
 
     </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
