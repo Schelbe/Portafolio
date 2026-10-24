@@ -3,6 +3,14 @@
    01. ESTILOS GENERALES
 ============================================ */
 
+/* Modelo de caja */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Documento y cuerpo */
 html {
     scroll-behavior: smooth;
 }
@@ -14,16 +22,13 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
-/* Títulos generales */
-
+/* Tipografía de encabezados */
 h1, h2, h3 {
     font-family: 'Archivo', sans-serif;
     text-transform: uppercase;
-    display: block;
 }
 
-/* Contenedores de secciones */
-
+/* Contenedores principales */
 #proyectos,
 #perfil,
 #contacto {
@@ -32,15 +37,13 @@ h1, h2, h3 {
     padding: 100px 24px;
 }
 
-/* Etiquetas de sección */
-
+/* Etiquetas identificadoras de sección */
 .etiqueta {
     color: #2e6b3c;
     font-weight: bold;
 }
 
-/* Espacio al navegar entre secciones */
-
+/* Desplazamiento hacia las secciones */
 #inicio,
 #proyectos,
 #perfil,
@@ -53,19 +56,17 @@ h1, h2, h3 {
    02. HEADER Y NAVEGACIÓN
 ============================================ */
 
-/* Encabezado fijo durante el desplazamiento */
-
+/* Encabezado fijo */
 header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     z-index: 100;
     background-color: #f3f2ef;
 }
 
-/* Barra de navegación */
-
+/* Distribución de la navegación */
 nav {
     display: flex;
     justify-content: center;
@@ -75,15 +76,10 @@ nav {
 }
 
 /* Logotipo */
-
 .logo {
     position: absolute;
     left: 40px;
-    color: #111111;
-    text-decoration: none;
 }
-
-/* Imagen del logotipo */
 
 .logo img {
     display: block;
@@ -91,8 +87,7 @@ nav {
     height: auto;
 }
 
-/* Lista de navegación */
-
+/* Menú de navegación */
 nav ul {
     display: flex;
     gap: 40px;
@@ -101,8 +96,6 @@ nav ul {
     padding: 0;
 }
 
-/* Enlaces del menú */
-
 nav ul a {
     color: #111111;
     text-decoration: none;
@@ -110,8 +103,7 @@ nav ul a {
     padding-bottom: 6px;
 }
 
-/* Enlace activo */
-
+/* Indicador de enlace activo */
 nav ul a.activo {
     border-bottom: 1px solid #111111;
 }
@@ -121,11 +113,9 @@ nav ul a.activo {
    03. SECCIÓN INICIO
 ============================================ */
 
-/* Contenedor principal */
-
+/* Distribución principal */
 #inicio {
     min-height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,10 +123,8 @@ nav ul a.activo {
     position: relative;
 }
 
-/* Título principal */
-
+/* Título y subtítulo */
 #inicio h1 {
-    color: #111111;
     font-size: clamp(32px, 6vw, 100px);
     margin: 0;
     font-family: 'Archivo Black', sans-serif;
@@ -144,15 +132,12 @@ nav ul a.activo {
     max-width: 100%;
 }
 
-/* Subtítulo */
-
 #inicio > span {
     text-align: center;
     padding: 0 20px;
 }
 
 /* Información inferior */
-
 .palabras-inferiores {
     position: absolute;
     bottom: 40px;
@@ -163,14 +148,10 @@ nav ul a.activo {
     font-family: 'Archivo', sans-serif;
 }
 
-/* Texto inferior izquierdo */
-
 .palabras-inferiores span:first-child {
     text-align: left;
     padding-left: 40px;
 }
-
-/* Texto inferior derecho */
 
 .palabras-inferiores span:last-child {
     text-align: right;
@@ -182,21 +163,15 @@ nav ul a.activo {
    04. SECCIÓN PROYECTOS
 ============================================ */
 
-/* Contenedor de proyectos */
-
+/* Contenedor y encabezado */
 #proyectos {
     min-height: 100vh;
-    box-sizing: border-box;
 }
-
-/* Título de sección */
 
 .proyectos h2 {
     font-size: 40px;
     margin: 16px 0;
 }
-
-/* Descripción introductoria */
 
 .descripcion-proyectos {
     max-width: 600px;
@@ -205,21 +180,17 @@ nav ul a.activo {
 }
 
 /* Cuadrícula de proyectos */
-
 .contenedor-proyectos {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
 }
 
-/* Tarjeta individual */
-
+/* Tarjetas de proyectos */
 .tarjeta-proyecto {
     border: 1px solid #d8d2c7;
     background-color: #f7f5f0;
 }
-
-/* Imagen del proyecto */
 
 .tarjeta-proyecto img {
     display: block;
@@ -228,35 +199,24 @@ nav ul a.activo {
     object-fit: cover;
 }
 
-/* Contenedor de información */
-
+/* Información de cada proyecto */
 .info-proyecto {
     padding: 20px;
 }
-
-/* Nombre del proyecto */
 
 .info-proyecto h3 {
     font-size: 18px;
     margin: 0 0 8px;
 }
 
-/* Descripción del proyecto */
-
-.info-proyecto p {
-    font-size: 13px;
-    margin: 0;
-}
-
 .proyecto-info {
     font-size: 11px;
     color: #555;
     line-height: 1.5;
-    display: block;
+    margin: 0;
 }
 
-/* Tecnologías utilizadas */
-
+/* Tecnologías */
 .tecnologias {
     color: #2e6b3c;
     font-size: 12px;
@@ -268,38 +228,34 @@ nav ul a.activo {
    05. SECCIÓN PERFIL
 ============================================ */
 
+/* Encabezado y título */
 .perfil-encabezado {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     margin-top: 40px;
 }
 
 .perfil-encabezado h2 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: clamp(70px, 10vw, 120px);
-    line-height: 0.9;
+    font-size: 40px;
     margin: 0;
-    letter-spacing: -4px;
 }
 
+/* Descripción personal */
 .perfil-descripcion {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-width: 750px;
 }
 
 .perfil-descripcion p {
-    font-family: 'Space Mono', monospace;
     font-size: 14px;
     line-height: 1.8;
     margin: 0;
 }
 
-
-/* ÁREAS DE INTERÉS Y HERRAMIENTAS */
-
+/* Etiquetas: áreas de interés y herramientas */
 .perfil-areas ul,
 .perfil-herramientas ul {
     display: flex;
@@ -313,79 +269,64 @@ nav ul a.activo {
 .perfil-areas li,
 .perfil-herramientas li {
     padding: 10px 18px;
-    font-family: 'Space Mono', monospace;
     font-size: 12px;
 }
 
-/* Áreas de interés en verde */
-
+/* Áreas de interés */
 .perfil-areas li {
     background-color: #2e6b3c;
     color: #f3f2ef;
 }
 
-/* Herramientas con borde negro */
-
+/* Herramientas */
 .perfil-herramientas li {
     border: 1px solid #111111;
     color: #111111;
 }
 
 
-
 /* ============================================
    06. SECCIÓN CONTACTO
 ============================================ */
 
-/* Estilos específicos pendientes */
+/* Pendiente: estilos específicos de contacto */
 
 
 /* ============================================
    07. DISEÑO RESPONSIVE
 ============================================ */
 
+/* Tablet y móvil: hasta 768px */
 @media (max-width: 768px) {
 
-    /* Navegación en dos filas */
+    /* Navegación vertical y logotipo centrado */
     nav {
         flex-direction: column;
         gap: 25px;
         padding: 25px 20px;
     }
 
-    /* Logotipo centrado */
     .logo {
         position: static;
     }
 
-    /* Tamaño del logotipo */
     .logo img {
         width: 45px;
     }
 
-    /* Enlaces de navegación */
+    /* Adaptación del menú */
     nav ul {
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    /* Tamaño de los enlaces */
     nav ul a {
         font-size: 12px;
     }
-}
 
-/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
-
-@media (max-width: 768px) {
-    .perfil-encabezado {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .perfil-encabezado h2 {
-        font-size: clamp(56px, 14vw, 100px);
-        letter-spacing: -2px;
+    /* Proyectos en una columna */
+    .contenedor-proyectos {
+        grid-template-columns: minmax(0, 1fr);
     }
 }

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macarena | Portafolio</title>
 
-    <!-- HOJA DE ESTILOS -->
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- TIPOGRAFÍAS DE GOOGLE FONTS -->
+    <!-- Tipografías de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -18,11 +18,13 @@
 
 <body>
 
-    <!-- ========================================
-         HEADER: LOGOTIPO Y NAVEGACIÓN
-    ========================================= -->
+    <!-- ============================================
+         01. HEADER Y NAVEGACIÓN
+    ============================================= -->
+
     <header>
         <nav>
+
             <!-- Logotipo -->
             <a href="#inicio" class="logo">
                 <img src="assets/img/Logotipo negro.png" alt="Logotipo personal">
@@ -35,17 +37,24 @@
                 <li><a href="#perfil">PERFIL</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <!-- ========================================
-         CONTENIDO PRINCIPAL
-    ========================================= -->
+
+    <!-- ============================================
+         02. CONTENIDO PRINCIPAL
+    ============================================= -->
+
     <main>
 
-        <!-- SECCIÓN 01: INICIO -->
+        <!-- ========================================
+             02.1 INICIO
+        ========================================= -->
+
         <section id="inicio">
 
+            <!-- Presentación principal -->
             <h1>FRONT-END DEVELOPER</h1>
 
             <span>
@@ -60,9 +69,14 @@
 
         </section>
 
-        <!-- SECCIÓN 02: PROYECTOS -->
+
+        <!-- ========================================
+             02.2 PROYECTOS
+        ========================================= -->
+
         <section id="proyectos" class="proyectos">
 
+            <!-- Encabezado -->
             <span class="etiqueta">PORTAFOLIO / 01</span>
 
             <h2>PROYECTOS SELECCIONADOS</h2>
@@ -72,27 +86,31 @@
                 enfocados en el diseño y desarrollo web.
             </p>
 
-            <!-- Contenedor de proyectos -->
+            <!-- Cuadrícula de proyectos -->
             <div class="contenedor-proyectos">
 
                 <!-- Proyecto 01 -->
                 <article class="tarjeta-proyecto">
+
                     <img src="assets/img/proyecto-01.jpg" alt="Vista previa del proyecto 01">
 
                     <div class="info-proyecto">
                         <h3>PROYECTO 01</h3>
                         <p class="proyecto-info">Diseño y desarrollo web</p>
                     </div>
+
                 </article>
 
                 <!-- Proyecto 02 -->
                 <article class="tarjeta-proyecto">
+
                     <img src="assets/img/proyecto-02.jpg" alt="Vista previa del proyecto 02">
 
                     <div class="info-proyecto">
                         <h3>PROYECTO 02</h3>
                         <p class="proyecto-info">Proyecto conceptual de interfaz.</p>
                     </div>
+
                 </article>
 
             </div>
@@ -104,53 +122,65 @@
 
         </section>
 
-        <!-- SECCIÓN 03: SOBRE MÍ -->
+
+        <!-- ========================================
+             02.3 PERFIL
+        ========================================= -->
+
         <section id="perfil" class="perfil">
 
             <span class="etiqueta">PERFIL / 02</span>
-        <div class="perfil-encabezado">
-            <h2>ENFOQUE</h2>
 
-            <div class="perfil-descripcion">
-                <p> 
-                   Me interesa especialmente el lado visual de la web:
-                   cómo se organizan los elementos, cómo interactúan
-                   los colores y las tipografías, y cómo los pequeños
-                   detalles pueden transformar por completo una página.
-                </p>
+            <!-- Enfoque y descripción -->
+            <div class="perfil-encabezado">
 
-                <p>
-                    Disfruto experimentar con distintas composiciones,
-                    buscar referencias y descubrir nuevas formas de llevar
-                    una idea a la pantalla. Me atraen los diseños con
-                    personalidad, aquellos que se alejan de lo convencional
-                    sin perder funcionalidad.
-                </p>
+                <h2>ENFOQUE</h2>
 
-                <p>
-                    Actualmente estoy explorando el desarrollo front-end
-                    y descubriendo mi propio estilo. Este espacio es parte
-                    de ese proceso: un lugar donde puedo poner en práctica
-                    lo que aprendo, experimentar con nuevas ideas y seguir
-                    evolucionando entre el diseño y el código.
-                </p>
+                <div class="perfil-descripcion">
+
+                    <p>
+                        Me interesa especialmente el lado visual de la web:
+                        cómo se organizan los elementos, cómo interactúan
+                        los colores y las tipografías, y cómo los pequeños
+                        detalles pueden transformar por completo una página.
+                    </p>
+
+                    <p>
+                        Disfruto experimentar con distintas composiciones,
+                        buscar referencias y descubrir nuevas formas de llevar
+                        una idea a la pantalla. Me atraen los diseños con
+                        personalidad, aquellos que se alejan de lo convencional
+                        sin perder funcionalidad.
+                    </p>
+
+                    <p>
+                        Actualmente estoy explorando el desarrollo front-end
+                        y descubriendo mi propio estilo. Este espacio es parte
+                        de ese proceso: un lugar donde puedo poner en práctica
+                        lo que aprendo, experimentar con nuevas ideas y seguir
+                        evolucionando entre el diseño y el código.
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-            
-            <!-- ÁREAS DE INTERÉS -->
-            <div class="perfil-areas">
-                <h3>ÁREAS DE INTERÉS</h3>
-                
-             <ul>
-                 <li>Diseño visual</li>
-                 <li>Desarrollo web</li>
-                 <li>Exploración</li>
-            </ul>
-        </div>
 
-             
-             <!-- HERRAMIENTAS -->
-              <div class="perfil-herramientas">
+            <!-- Áreas de interés -->
+            <div class="perfil-areas">
+
+                <h3>ÁREAS DE INTERÉS</h3>
+
+                <ul>
+                    <li>Diseño visual</li>
+                    <li>Desarrollo web</li>
+                    <li>Exploración</li>
+                </ul>
+
+            </div>
+
+            <!-- Herramientas -->
+            <div class="perfil-herramientas">
+
                 <h3>HERRAMIENTAS</h3>
 
                 <ul>
@@ -161,11 +191,15 @@
                     <li>GitHub</li>
                 </ul>
 
-              </div>
+            </div>
 
         </section>
 
-        <!-- SECCIÓN 04: CONTACTO -->
+
+        <!-- ========================================
+             02.4 CONTACTO
+        ========================================= -->
+
         <section id="contacto" class="contacto">
 
             <span class="etiqueta">CONTACTO / 03</span>
@@ -178,9 +212,11 @@
 
     </main>
 
-    <!-- ========================================
-         JAVASCRIPT
-    ========================================= -->
+
+    <!-- ============================================
+         03. JAVASCRIPT
+    ============================================= -->
+
     <script src="js/script.js"></script>
 
 </body>
