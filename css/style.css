@@ -25,7 +25,7 @@ h1, h2, h3 {
 /* Contenedores de secciones */
 
 #proyectos,
-#sobre-mi,
+#perfil,
 #contacto {
     max-width: 1100px;
     margin: 0 auto;
@@ -39,19 +39,29 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+/* Espacio al navegar entre secciones */
+
+#inicio,
+#proyectos,
+#perfil,
+#contacto {
+    scroll-margin-top: 110px;
+}
+
 
 /* ============================================
    02. HEADER Y NAVEGACIÓN
 ============================================ */
 
-/* Encabezado */
+/* Encabezado fijo durante el desplazamiento */
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
+    background-color: #f3f2ef;
 }
 
 /* Barra de navegación */
@@ -127,9 +137,18 @@ nav ul a.activo {
 
 #inicio h1 {
     color: #111111;
-    font-size: 100px;
+    font-size: clamp(32px, 6vw, 100px);
     margin: 0;
     font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    max-width: 100%;
+}
+
+/* Subtítulo */
+
+#inicio > span {
+    text-align: center;
+    padding: 0 20px;
 }
 
 /* Información inferior */
@@ -246,10 +265,72 @@ nav ul a.activo {
 
 
 /* ============================================
-   05. SECCIÓN SOBRE MÍ
+   05. SECCIÓN PERFIL
 ============================================ */
 
-/* Estilos específicos pendientes */
+.perfil-encabezado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.perfil-encabezado h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(70px, 10vw, 120px);
+    line-height: 0.9;
+    margin: 0;
+    letter-spacing: -4px;
+}
+
+.perfil-descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.perfil-descripcion p {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* ÁREAS DE INTERÉS Y HERRAMIENTAS */
+
+.perfil-areas ul,
+.perfil-herramientas ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.perfil-areas li,
+.perfil-herramientas li {
+    padding: 10px 18px;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+}
+
+/* Áreas de interés en verde */
+
+.perfil-areas li {
+    background-color: #2e6b3c;
+    color: #f3f2ef;
+}
+
+/* Herramientas con borde negro */
+
+.perfil-herramientas li {
+    border: 1px solid #111111;
+    color: #111111;
+}
+
 
 
 /* ============================================
@@ -263,4 +344,48 @@ nav ul a.activo {
    07. DISEÑO RESPONSIVE
 ============================================ */
 
-/* Adaptaciones para tablet y móvil pendientes */
+@media (max-width: 768px) {
+
+    /* Navegación en dos filas */
+    nav {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+
+    /* Logotipo centrado */
+    .logo {
+        position: static;
+    }
+
+    /* Tamaño del logotipo */
+    .logo img {
+        width: 45px;
+    }
+
+    /* Enlaces de navegación */
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Tamaño de los enlaces */
+    nav ul a {
+        font-size: 12px;
+    }
+}
+
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+
+@media (max-width: 768px) {
+    .perfil-encabezado {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .perfil-encabezado h2 {
+        font-size: clamp(56px, 14vw, 100px);
+        letter-spacing: -2px;
+    }
+}
