@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,24 +6,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macarena | Portafolio</title>
+
+    <!-- HOJA DE ESTILOS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- TIPOGRAFÍAS DE GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
 </head>
 
 <body>
 
-    <!-- HEADER: LOGOTIPO Y NAVEGACIÓN -->
+    <!-- ========================================
+         HEADER: LOGOTIPO Y NAVEGACIÓN
+    ========================================= -->
     <header>
         <nav>
+            <!-- Logotipo -->
             <a href="#inicio" class="logo">
                 <img src="assets/img/Logotipo negro.png" alt="Logotipo personal">
             </a>
 
+            <!-- Menú de navegación -->
             <ul>
-                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#inicio" class="activo">INICIO</a></li>
                 <li><a href="#proyectos">PROYECTOS</a></li>
                 <li><a href="#sobre-mi">SOBRE MÍ</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
@@ -30,37 +38,44 @@
         </nav>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
     <main>
 
         <!-- SECCIÓN 01: INICIO -->
         <section id="inicio">
 
-            <h1>PORTAFOLIO</h1>
+            <h1>FRONT-END DEVELOPER</h1>
 
+            <span>
+                Desarrollo web con enfoque en diseño visual e interfaces digitales.
+            </span>
+
+            <!-- Información inferior -->
             <div class="palabras-inferiores">
                 <span>MACARENA LAGOS</span>
-                <span>INGENIERÍA INFORMÁTICA</span>
-                <span>CHILE // 2026</span>
-                <span>MAC.LAGOSR@GMAIL.COM</span>
+                <span>CHILE © 2026</span>
             </div>
 
         </section>
 
         <!-- SECCIÓN 02: PROYECTOS -->
         <section id="proyectos" class="proyectos">
-            <span class="etiqueta">PORTAFOLIO / 01</span>
 
+            <span class="etiqueta">PORTAFOLIO / 01</span>
 
             <h2>PROYECTOS SELECCIONADOS</h2>
 
             <p class="descripcion-proyectos">
-                Una selección de proyectos personales y conceptuales 
+                Una selección de proyectos personales y conceptuales
                 enfocados en el diseño y desarrollo web.
             </p>
 
-
+            <!-- Contenedor de proyectos -->
             <div class="contenedor-proyectos">
+
+                <!-- Proyecto 01 -->
                 <article class="tarjeta-proyecto">
                     <img src="assets/img/proyecto-01.jpg" alt="Vista previa del proyecto 01">
 
@@ -70,6 +85,7 @@
                     </div>
                 </article>
 
+                <!-- Proyecto 02 -->
                 <article class="tarjeta-proyecto">
                     <img src="assets/img/proyecto-02.jpg" alt="Vista previa del proyecto 02">
 
@@ -78,18 +94,20 @@
                         <p class="proyecto-info">Proyecto conceptual de interfaz.</p>
                     </div>
                 </article>
+
             </div>
 
+            <!-- Tecnologías -->
             <p class="tecnologias">
                 HTML · CSS · JAVASCRIPT · DISEÑO UI
             </p>
-        </section>
 
+        </section>
 
         <!-- SECCIÓN 03: SOBRE MÍ -->
         <section id="sobre-mi" class="sobremi">
-            <span class="etiqueta">SOBRE MÍ / 02</span>
 
+            <span class="etiqueta">SOBRE MÍ / 02</span>
 
             <h2>SOBRE MÍ</h2>
 
@@ -103,8 +121,8 @@
 
         <!-- SECCIÓN 04: CONTACTO -->
         <section id="contacto" class="contacto">
-            <span class="etiqueta">CONTACTO / 03</span>
 
+            <span class="etiqueta">CONTACTO / 03</span>
 
             <h2>CONTACTO</h2>
 
@@ -114,7 +132,9 @@
 
     </main>
 
-    <!-- JAVASCRIPT -->
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
     <script src="js/script.js"></script>
 
 </body>
